@@ -1,0 +1,46 @@
+:root {
+    --dark1: black;
+    --dark4: grey;
+    --pink: rgb(226, 68, 160);
+}
+body {
+    padding: 6vh;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    display: none;
+}
+.burger-item {
+    background-color: var(--dark4);
+    width: 20px;
+    height: 3px;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 21px;
+}
+/* For Desktop */
+@media screen and (min-width: 668px) {
+    .burger {
+        display: none;
+    }
+    .navigation {
+        width: 40vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation li {
+        color: var(--dark4);
+        font-size: large;
+        list-style-type: none;
+    }
+    .pink {
+        color: var(--pink);
+    }
+}
